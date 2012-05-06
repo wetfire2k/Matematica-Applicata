@@ -1,0 +1,19 @@
+%Scrivere un programma che chieda di inserire da tastiera la quantità di pioggia
+%caduta nei 12 mesi del 2009 e che poi generi il grafico relativo, con le opportune etichette.
+function es06()
+
+mesi = [ 'Gennaio', 'Febbraio' , 'Marzo','Aprile', 'Maggio', 'Giugno',   'Luglio', 'Agosto', 'Settembre', 
+         'Ottobre', 'Novembre', 'Dicembre'];
+
+pioggia = zeroes(12);
+
+
+for i = 1:12
+
+    pioggia(i) = input( sprintf('Inserire quantità di pioggia in %s >', mesi(i) ) );
+
+end
+
+plot(mesi,pioggia);
+     
+end

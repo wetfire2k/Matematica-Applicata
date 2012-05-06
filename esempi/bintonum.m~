@@ -1,0 +1,14 @@
+function r=bintonum(s)
+% s è il numero binario come stringa,ritorna un intero
+%Su una sola riga di codice
+% r=sum((s-48).*2.^[length(s)-1:-1:0])
+r=0;
+i=length(s)-1;
+for c=s %cicla i caratteri della stringa    
+    
+    r=r+(c-48)*2^i;
+    %c-48 = trasla i caratteri
+    i=i-1;
+end
+
+end
